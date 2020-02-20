@@ -1,0 +1,55 @@
+The AFsp audio file routines are provided free of charge subject to the
+simplified BSD license in the file Licence.
+
+Windows Executables:
+  Windows versions of the filter design routines (executables) are in the
+  MSVC/bin folder.  The MSVC folder can also be used to re-build the Windows
+  executables using Microsoft Visual Studio.
+
+Building on Unix Systems:
+  After unpacking the sources, run make in the main directory,
+    % make
+  This will build the library files lib/libtsp.a, lib/libAO.a and the audio
+  utility programs in bin/.
+
+Test script:
+  Run make in the test directory to run some rudimentary tests on the
+  audio utility programs.
+
+Using the library routines:
+  To use the AFsp routines in a program you will have to link with the
+  object library libtsp.a.  User programs also need access to the header
+  file libtsp.h.
+
+Man page files:
+  The directory man contains man pages for the utility programs and the top
+  level libtsp routines.  These man pages have been automatically generated
+  from the corresponding file header and so contain the same information as the
+  file header itself.  The extensions for the man pages are .1AFsp and .3tsp.
+  On some systems, these will have to be renamed to .1 and .3 in order for the
+  man program to recognize them.
+
+html files:
+  The directory html contains html files for the utility programs and the top
+  level libtsp routines.  These html pages have been automatically generated
+  from the corresponding file header and so contain the same information as the
+  file header itself.
+
+Other files:
+  A number of routines are hidden one level down in a "nucleus" directory.
+  These are internal routines used by the AFsp routines and not usually
+  directly accessed by a user program.
+
+  The header files in the include/libtsp directory are used to define internal
+  data structures.  While not usually used directly by the end user, these
+  header files are needed for rebuilding the library.
+
+Mac OS X:
+  There have been some problems reported in building the executables. The
+  following steps seem to cure the problems.
+  1. After building the library libtsp, run ranlib again,
+     ranlib lib/libtsp.a
+  2. Omit the -s option for the linker,
+     make "LDFLAGS=-lm"
+
+$Id: INSTALL.txt 1.1 2018/11/16 AFsp-v10r2 $
