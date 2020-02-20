@@ -66,7 +66,7 @@ Here are the steps involved:
 1. Download this repository
 2. Unzip `AFsp-v10r2` into the home directory
 3. Run >>> `make` (this will make C written InfoAudio and other tool accessible to you via command line)
-4. Now run >>> python TSP-Speech.py
+4. Now run >>> python TSP_Speech.py
 *** 
 This will extract and use `AFsp-v10r2` tool to provide you a big .csv file with annotation and other speech features. They can be used for ASR or TTS modelling. 
 
