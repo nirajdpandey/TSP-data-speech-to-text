@@ -6,7 +6,13 @@ TSP speech data is not ready to use for ASR systems as they do not have annotati
 Well, it's an information inbulit with the files while speech were recorded. To see any header information of a wav file type >>> `xxd | head CB01_01.wav` where head CB01_01.wav is the name of the target wav file, you want to see header of. This will generate following cmd output. 
 ```
 (base) niraj@Dell:~/Documents/work_place/TSP_Speech/TSP_48k/CB$ xxd | head CB01_01.wav
-RIFF�7WAVEfmt ��wLISTRINFOINAM%Female (age 10) speaker, CB01_01 48kICRD1997-05-07 11:01:41 UTCafsp�AFspdatabase: TSP Speech Files v2ID: TSP CB01_01 48kspeaker: CB Female (age 10)text: "The birch canoe slid on the smooth planks."recording_conditions: Anechoic room, Sony ECM-909A microphone,
+
+RIFF�7WAVEfmt ��wLISTRINFOINAM%Female (age 10) speaker, CB01_01 48kICRD1997-05-07 11:01:41 UTC
+afsp�AFspdatabase:
+TSP Speech Files v2ID: TSP CB01_01 48k
+speaker: CB Female (age 10)
+text: "The birch canoe slid on the smooth planks."
+recording_conditions: Anechoic room, Sony ECM-909A microphone,
 Sony TCD-D2 DAT recorderdata
 ```
 Here one can see that the annotation and other information are stored in the header which `AFsp-v10r2` will extract and our python script use that to make use of compiled C code to generate a pipe seperated csv file with all these information and many more. 
