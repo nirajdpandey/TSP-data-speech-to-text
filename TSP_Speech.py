@@ -9,7 +9,6 @@ print("Your process has been initialized. This might takes few seconds to comple
 main = './TSP_48k'
 wavs = [w for w in glob.glob(os.path.join(main, '*/*.wav')) if os.path.isfile(w)]
 print("Total Wav files found:", len(wavs))
-# wavs = glob.glob("/home/pandeynj/workspace/data/TTS/TTS/RAW/TSP-Speech/TSP-Speech/*.wav")
 with open("wav_files.txt", 'w') as f:
     for i in wavs:
         f.write(i)
