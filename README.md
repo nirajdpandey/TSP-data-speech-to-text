@@ -5,7 +5,7 @@ TSP speech data is not ready to use for ASR systems as they do not have annotati
 #### What is header in wav files?
 Well, it's an information inbulit with the files while speech were recorded. To see any header information of a wav file type >>> `xxd | head CB01_01.wav` where head CB01_01.wav is the name of the target wav file, you want to see header of. This will generate following cmd output. 
 ```
-(base) niraj@Dell:~/Documents/work_place/TSP_Speech/TSP_48k/CB$ xxd | head CB01_01.wav
+(base) niraj@Dell:~/Documents/work_place/TSP_Speech/TSP_48k/CB$ `xxd | head CB01_01.wav`
 
 RIFF�7WAVEfmt ��wLISTRINFOINAM%Female (age 10) speaker, CB01_01 48kICRD1997-05-07 11:01:41 UTC
 afsp�AFspdatabase:
