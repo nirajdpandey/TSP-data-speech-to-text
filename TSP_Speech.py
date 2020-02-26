@@ -1,3 +1,6 @@
+__Date__ = "02 Fabruary 2019"
+__Author__ = "Niraj Dev Pandey"
+
 # Importing Dependencies
 import glob
 import os
