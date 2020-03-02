@@ -3,7 +3,7 @@ Extract TSP speech data annotation and model ASR system on it
 ***
 TSP speech data is not ready to use for ASR systems as they do not have annotation attached to it. In order to extract annotation you can use the tool named `AFsp-v10r2`. This tool will extract hidded transcripts from the .wav files header. 
 #### What is header in wav files?
-Well, it's an information inbulit with the files while speech were recorded. To see any header information of a wav file type >>> `xxd | head CB01_01.wav` where head CB01_01.wav is the name of the target wav file, you want to see header of. This will generate following cmd output. 
+Well, it's an information inbulit with the files while speech were recorded. To see any header information of a wav file type >>> `xxd | head CB01_01.wav` where CB01_01.wav is the name of the target wav file, you want to see header of. This will generate following cmd output. 
 
 `(base) niraj@Dell:~/Documents/work_place/TSP_Speech/TSP_48k/CB$` `xxd | head CB01_01.wav`
 ```
